@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Sen:wght@400..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sen:wght@400..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #252525;
+}
+body .wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1538px;
+  color: #E4E4E4;
+}
+body .wrapper p,
+body .wrapper ul,
+body .wrapper li,
+body .wrapper a {
+  font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+body .wrapper button,
+body .wrapper li, body .wrapper input {
+  cursor: pointer;
+}
+body .wrapper nav {
+  display: flex;
+  padding: 20px 200px 20px 200px;
+  justify-content: space-between;
+  align-items: center;
+}
+body .wrapper nav img {
+  width: 150px;
+  height: 150px;
+}
+body .wrapper nav ul {
+  display: flex;
+  color: #E4E4E4;
+  list-style: none;
+  gap: 30px;
+}
+body .wrapper nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+body .wrapper nav ul li a {
+  color: inherit;
+  text-decoration: none;
+  padding-bottom: 3px;
+  /* Matn ostidagi bo'shliq */
+  position: relative;
+}
+body .wrapper nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00C1EC;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+body .wrapper nav ul li a:hover::after {
+  transform: scaleX(1);
+}
+body .wrapper header {
+  display: flex;
+  padding: 20px 200px 0px 200px;
+  margin-top: 100px;
+  color: inherit;
+  align-items: center;
+  gap: 81px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body .wrapper header .text_div_header {
+  width: 438px;
+  height: 377px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .wrapper header .text_div_header h2 {
+  font-size: 48px;
+  font-weight: 600;
+}
+body .wrapper header .text_div_header h1 {
+  font-size: 52px;
+}
+body .wrapper header .text_div_header p {
+  font-size: 18px;
+  line-height: 21.38px;
+}
+body .wrapper header .text_div_header a {
+  display: flex;
+  text-decoration: none;
+}
+body .wrapper header .text_div_header a button {
+  width: 200px;
+  height: 47px;
+  border-radius: 6px;
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: #E2A300;
+  border: none;
+}
+body .wrapper header .text_div_header a button:hover {
+  background-color: #00C4F0;
+  transition: 0.4s;
+}
+body .wrapper header .img_div_header {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  border: 30px solid #00C1EC;
+  border-radius: 50%;
+}
+body .wrapper header .img_div_header .img_div_header_2 {
+  width: 600px;
+  height: 100%;
+  background-image: url(./images/MY-photo.png);
+  transform: scaleX(-1);
+  background-size: 99% 100%;
+  margin-top: 29.4px;
+}
+body .wrapper .services {
+  display: flex;
+  padding: 50px 200px 50px 200px;
+  margin-top: 100px;
+  flex-direction: column;
+  gap: 30px;
+}
+body .wrapper .services .items_services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 154.6px;
+  justify-content: center;
+}
+body .wrapper .services .items_services .servi_items {
+  width: 270px;
+  height: 270px;
+  background: #2A2A2A;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 29px;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.4705882353);
+}
+body .wrapper .services .items_services .servi_items p {
+  color: #E4E4E4;
+  font-size: 24px;
+}
+body .wrapper .services .items_services .servi_items svg {
+  fill: #00C4F0;
+  stroke: #00C4F0;
+}
+body .wrapper .services .items_services .servi_items:hover {
+  background-color: #00C4F0;
+  transition: 0.4s;
+}
+body .wrapper .services .items_services .servi_items:hover svg {
+  width: 105px;
+  height: 105px;
+  fill: #252525;
+  stroke: #252525;
+}
+body .wrapper .services .items_services .servi_items:hover p {
+  color: #252525;
+  font-weight: 300;
+}
+body .wrapper .men_haqimda {
+  padding: 100px 200px 50px 200px;
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+body .wrapper .men_haqimda .text_about {
+  width: 500px;
+  height: 832px;
+  background-color: red;
+  background-color: #2C2C2C;
+  padding: 40px;
+  border-radius: 14px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+body .wrapper .men_haqimda .text_about p {
+  line-height: 33.76px;
+  font-size: 20px;
+}
+body .wrapper .men_haqimda .text_about h1 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 54.4px;
+}
+body .wrapper .men_haqimda .img_about {
+  width: 519px;
+  height: 552px;
+  background-image: url(./images/My_photo_2.jpg);
+  background-size: 100% 100%;
+  background-position: top 690px top 309px;
+  border-radius: 20px;
+}
+body .wrapper .Portfolio {
+  padding: 50px 200px 50px 200px;
+  display: flex;
+  gap: 119px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body .wrapper .Portfolio .timmy_teacher {
+  width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 14px;
+  gap: 60px;
+  background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+  box-shadow: 0px 4px 15px 0px rgba(27, 27, 27, 0.2784313725);
+}
+body .wrapper .Portfolio .timmy_teacher:hover {
+  box-shadow: 0px 4px 6px 0px rgba(116, 112, 112, 0.4705882353);
+}
+body .wrapper .Portfolio a .img_div_timmy,
+body .wrapper .Portfolio a .img_div_school {
+  width: 100%;
+  height: 270px;
+  border-radius: 14px;
+}
+body .wrapper .Portfolio a .img_div_timmy {
+  background-image: url(./images/timmy_teacher.jpg);
+  background-size: 100% 100%;
+}
+body .wrapper .Portfolio a .img_div_school {
+  background-image: url(./images/school.jpg);
+  background-size: 100% 100%;
+}
+body .wrapper .Portfolio .text_timmy {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+body .wrapper .Portfolio .text_timmy p {
+  font-size: 18px;
+  line-height: 32.38px;
+}
+body .wrapper .Portfolio .text_timmy .timmy-a {
+  letter-spacing: 2px;
+  color: blue;
+}
+body .wrapper .contact {
+  display: flex;
+  justify-content: center;
+}
+body .wrapper .contact .row {
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .wrapper .contact .row .row .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .wrapper .contact .row .row .contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+body .wrapper .contact .row .row .contact form .input-box {
+  width: 812px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+body .wrapper .contact .row .row .contact form .input-box .box {
+  width: 812px;
+  height: 60px;
+  border-radius: 5px;
+  padding-left: 30px;
+  border: 1px solid #E6E6E6;
+  background: #F9F9F9;
+}
+body .wrapper .contact .row .row .contact form .box {
+  width: 812px;
+  border-radius: 5px;
+  padding: 30px;
+  border: 1px solid #E6E6E6;
+  background: #F9F9F9;
+}
+body .wrapper .contact .row .row .contact form .btn {
+  padding: 17px 30px 17px 30px;
+  display: flex;
+  align-items: center;
+  background-color: #23A6F0;
+  border: none;
+  gap: 15px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+body .wrapper .contact .row .row .contact form input:focus {
+  outline: none;
+  border: 1px solid #E6E6E6;
+  text-decoration: none;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.5);
+}
+body .wrapper .contact .row .row .contact form textarea:focus {
+  outline: none;
+  border: 1px solid #E6E6E6;
+  text-decoration: none;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.5);
+}
+body .wrapper footer {
+  display: flex;
+  padding: 20px 200px 20px 200px;
+  justify-content: space-between;
+}
+body .wrapper footer ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 30px;
+  color: inherit;
+}
+body .wrapper footer ul .footer_icons {
+  display: flex;
+  justify-content: space-between;
+}
+body .wrapper footer ul li {
+  scroll-behavior: smooth;
+  transition: 1.5s;
+}
+body .wrapper footer ul li a {
+  text-decoration: none;
+  color: inherit;
+  transition: 1.5s;
+  scroll-behavior: smooth;
+}
+body .wrapper footer ul li a a:active {
+  transition: 2s;
+}
+body .wrapper footer div img {
+  width: 150px;
+  height: 150px;
+}
+@media screen and (max-width: 1280px) {
+  body .wrapper nav ul li {
+    display: none;
+  }
+}
+@media screen and (max-width: 909px) {
+  body .wrapper {
+    width: 900px;
+  }
+}/*# sourceMappingURL=main.css.map */
